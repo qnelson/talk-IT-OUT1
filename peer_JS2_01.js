@@ -1,9 +1,9 @@
 var value = 42;
 
 if (value >= 53) {
-  value += 42
+    value += 42
 } else {
-  value -= 13
+    value -= 13
 };
 
 var string = '11';
@@ -13,8 +13,8 @@ value += string;
 
 var array = [];
 
-for (var i = 0; i < value.length; i++){
-  array[i] = value.charAt(i);
+for (var i = 0; i < value.length; i++) {
+    array[i] = value.charAt(i);
 
 }
 
@@ -26,70 +26,49 @@ array.pop();
 var backwardsConcat = [];
 var j = 0;
 
-for (var i = 1; i >= 0; i--){
-backwardsConcat[j] = array[i];
-j++;
+for (var i = 1; i >= 0; i--) {
+    backwardsConcat[j] = array[i];
+    j++;
 }
 
 
 
 
 value = parseInt(value);
-backwardsConcat = parseInt(backwardsConcat[0]+backwardsConcat[1]);
+backwardsConcat = parseInt(backwardsConcat[0] + backwardsConcat[1]);
 
 value = value + backwardsConcat;
 console.log(value);
-if (value < 60){
-  value = 14;
+if (value < 60) {
+    value = 14;
 
-}else if (value == 2930){
-  value = 27;
+} else if (value == 2930) {
+    value = 27;
 
-}else{
-value = 2;
-
-}
-
-while (value < 37){
-  value++;
-
+} else {
+    value = 2;
 
 }
 
-var stringify =function(val) {
-  val= val.toString();
-  console.log(val);
-  if (val.length > 1){
-    val = val.substring(1);
+while (value < 37) {
+    value++;
 
-  }
-return val;
+
+}
+
+var stringify = function(val) {
+    val = val.toString();
+    console.log(val);
+    if (val.length > 1) {
+        val = val.substring(1);
+
+    }
+    return val;
 }
 
 value = stringify(value);
 
 console.log(value);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
