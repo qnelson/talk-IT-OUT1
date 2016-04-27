@@ -1,3 +1,104 @@
+var value = 42;
+
+if (value >= 53) {
+  value += 42
+} else {
+  value -= 13
+};
+
+var string = '11';
+
+value += string;
+
+
+var array = [];
+
+for (var i = 0; i < value.length; i++){
+  array[i] = value.charAt(i);
+
+}
+
+array.shift();
+array.pop();
+
+
+
+var backwardsConcat = [];
+var j = 0;
+
+for (var i = 1; i >= 0; i--){
+backwardsConcat[j] = array[i];
+j++;
+}
+
+
+
+
+value = parseInt(value);
+backwardsConcat = parseInt(backwardsConcat[0]+backwardsConcat[1]);
+
+value = value + backwardsConcat;
+console.log(value);
+if (value < 60){
+  value = 14;
+
+}else if (value == 2930){
+  value = 27;
+
+}else{
+value = 2;
+
+}
+
+while (value < 37){
+  value++;
+
+
+}
+
+var stringify =function(val) {
+  val= val.toString();
+  console.log(val);
+  if (val.length > 1){
+    val = val.substring(1);
+
+  }
+return val;
+}
+
+value = stringify(value);
+
+console.log(value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 1. Start with the number 42 and set that equal to 'value'
 
@@ -19,12 +120,12 @@
 
 8. Add 'value' and the new variable created in Step 6 together and store them in 'value'
 
-9. If the new value of 'value' is less than 60, set 'value' equal to 14. If not, check to see if it is equal to 2930, if it is, set 'value' equal to 27. 
+9. If the new value of 'value' is less than 60, set 'value' equal to 14. If not, check to see if it is equal to 2930, if it is, set 'value' equal to 27.
 If neither of these are true, set the value to 2.
 
 10. Create a while loop that counts down from 10 and increments 'value' by 1.
 
-11. Create a function that accepts an argument 'val'. The function should convert 'val' to a String, then drop the first character off the String, but only if there 
+11. Create a function that accepts an argument 'val'. The function should convert 'val' to a String, then drop the first character off the String, but only if there
 is more than 1 character in the String. Return 'val' and set the 'value' to the returned value.
 
 12. Call the function.
